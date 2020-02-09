@@ -1,0 +1,252 @@
+<html>
+<body style="background-color:#ffead1;">
+<head>
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #4a2700;
+  margin-top: -20px;
+  padding: 8px 100px;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: -30px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 25px;
+  background-color: inherit;
+  font-family: inherit;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #664c30;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 40px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  padding: 12px 10px;
+  margin-left: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  padding: 12px 10px;
+  margin-left: -50px;
+}
+
+body {margin:20px;}
+.main {
+ padding: 16px;
+ margin-top: 30px;
+ height: 1500px; /* Used in this example to enable scrolling */
+}
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: "Verdana";}
+.month {
+ padding: 70px 25px;
+ width: 100%;
+ background: #f79eaa;
+ text-align: center;
+ border-radius: 20px;
+}
+.month ul {
+ margin: 0;
+ padding: 0;
+}
+.month ul li {
+ color: black;
+ font-size: 40px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ font-family: "Verdana";
+}
+.month .prev {
+ float: left;
+ padding-top: 10px;
+}
+.month .next {
+ float: right;
+ padding-top: 10px;
+}
+<br>
+.weekdays {
+ margin: 0;
+ padding: 10px 0;
+ background-color: #ffa6db;
+}
+.weekdays li {
+ display: inline-block;
+ width: 13.6%;
+ color: black;
+ text-align: center;
+ font-family: "Verdana";
+}
+.days {
+ padding: 10px 0;
+ background: #afdadf;
+ margin: 0;
+}
+.days li {
+ list-style-type: none;
+ display: inline-block;
+ width: 13.6%;
+ text-align: center;
+ margin-bottom: 15px;
+ font-size:12px;
+ color: black;
+ font-family: "Verdana";
+}
+.days li .active {
+ padding: 5px;
+ background: #ffb5e1;
+ color: black !important
+}
+.days li .rat {
+ padding: 5px;
+ background: #ffb5e1;
+ color: #a3a3a3
+}
+ 
+ul li > button.checked {
+ background: #ffb5e1;
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+ .weekdays li, .days li {width: 13.1%;}
+}
+@media screen and (max-width: 420px) {
+ .weekdays li, .days li {width: 12.5%;}
+ .days li .active {padding: 2px;}
+}
+@media screen and (max-width: 290px) {
+ .weekdays li, .days li {width: 12.2%;}
+h1{margin-right: 150px;
+ margin-left: 80px;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a style="text-align:center; display:inline-grid;" href="mainpage.html">Back to Home</a> <!-- FIX LINK -->
+        <link rel="stylesheet" href="mainpage.html">
+        <div class="dropdown">
+          <button class="dropbtn">Other 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="journal.html">Journal</a>
+            <a href="exercise.html">Exercise Calendar</a>
+            <a href="checklist.html">Check List</a>
+            <a href="index.php">Community</a>
+          </div>
+        </div> 
+      </div>
+
+<h1 align="center"><br>Exercise Calendar</h1>
+<div class="month">
+    
+ <ul>
+   <li>January<li><img align="left" src="img/exercise.gif" alt="exercise" style="width:100px;height:100px;">
+   </li>
+<li><img align="right" src="img/exercise.gif" alt="exercise" style="width:100px;height:100px;">
+   </li>
+   <br><span style="font-size:18px">2020</span></li>
+  
+ </ul>
+</div>
+<div></div>
+<ul class="weekdays">
+ <li>Mo</li>
+ <li>Tu</li>
+ <li>We</li>
+ <li>Th</li>
+ <li>Fr</li>
+ <li>Sa</li>
+ <li>Su</li>
+</ul>
+<ul class="days"> 
+ <li><button type="submit" class="stylebutton">30</button></li>
+ <li><button type="submit" class="stylebutton">31</button></li>
+ <li><button type="submit" class="stylebutton">1</button></li>
+ <li><button type="submit" class="stylebutton">2</button></li>
+ <li><button type="submit" class="stylebutton">3</button></li>
+ <li><button type="submit" class="stylebutton">4</button></li>
+ <li><button type="submit" class="stylebutton">5</button></li>
+ <li><button type="submit" class="stylebutton">6</button></li>
+ <li><button type="submit" class="stylebutton">7</button></li>
+ <li><button type="submit" class="stylebutton">8</button></li>
+ <li><button type="submit" class="stylebutton">9</button></li>
+ <li><button type="submit" class="stylebutton">10</button></li>
+ <li><button type="submit" class="stylebutton">11</button></li>
+ <li><button type="submit" class="stylebutton">12</button></li>
+ <li><button type="submit" class="stylebutton">13</button></li>
+ <li><button type="submit" class="stylebutton">14</button></li>
+ <li><button type="submit" class="stylebutton">15</button></li>
+ <li><button type="submit" class="stylebutton">16</button></li>
+ <li><button type="submit" class="stylebutton">17</button></li>
+ <li><button type="submit" class="stylebutton">18</button></li>
+ <li><button type="submit" class="stylebutton">19</button></li>
+ <li><button type="submit" class="stylebutton">20</button></li>
+ <li><button type="submit" class="stylebutton">21</button></li>
+ <li><button type="submit" class="stylebutton">22</button></li>
+ <li><button type="submit" class="stylebutton">23</button></li>
+ <li><button type="submit" class="stylebutton">24</button></li>
+ <li><button type="submit" class="stylebutton">25</button></li>
+ <li><button type="submit" class="stylebutton">26</button></li>
+ <li><button type="submit" class="stylebutton">27</button></li>
+ <li><button type="submit" class="stylebutton">28</button></li>
+ <li><button type="submit" class="stylebutton">29</button></li>
+ <li><button type="submit" class="stylebutton">30</button></li>
+ <li><button type="submit" class="stylebutton">31</button></li>
+ <li><button type="submit" class="stylebutton">1</button></li>
+ <li><button type="submit" class="stylebutton">2</button></li>
+</ul>
+ 
+<script>
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector(".days");
+list.addEventListener('click', function(ev) {
+ if (ev.target.tagName === 'BUTTON') {
+   ev.target.classList.toggle('checked');
+ }
+}, false);
+</script>
+</body>
+</html>

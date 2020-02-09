@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #4a2700;
+  margin-top: -10px;
+  padding: 8px 100px;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: -30px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 25px;
+  background-color: inherit;
+  font-family: inherit;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #664c30;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 40px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  padding: 12px 10px;
+  margin-left: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  padding: 12px 10px;
+  margin-left: -50px;
+}
+
+#text{
+    border-radius: 20px;
+}
+
+body {background-color: #f5e4f5;
+     font-family: Verdana, sans-serif;}
+h1   {color: #752375;
+    font-family: "Ostrich";
+    font-size: 40px}
+h3    {color: #5e1b5e;}
+p {color: #4A4885;
+  margin-left: 75px;
+  margin-right: 100px;}
+p.thick {font-weight: bold;}
+body {background-color: #f5e4f5;
+     font-family: Verdana, sans-serif;}
+
+</style>
+<body>
+    <div class="navbar">
+        <a style="text-align:center; display:inline-grid;" href="mainpage.html">Back to Home</a> <!-- FIX LINK -->
+        <link rel="stylesheet" href="mainpage.html">
+        <div class="dropdown">
+          <button class="dropbtn">Other 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="journal.html">Journal</a>
+            <a href="exercise.html">Exercise Calendar</a>
+            <a href="checklist.html">Check List</a>
+            <a href="index.php">Community</a>
+          </div>
+        </div> 
+      </div>
+<h1 align="center">Journal</h1>
+<form action="//www.html.am/html-codes/textboxes/submitted.cfm">
+<textarea name="myTextBox" cols="233" rows="250" id= "text">
+
+    How was your day?
+</textarea>
+
+</form>
+
+
+
+</body>
+</html>
